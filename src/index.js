@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-const router = require("./router");
+const { router } = require("./routes/index");
 const mongose = require("./utils/database")(app);
 
 app.use(express.json());
